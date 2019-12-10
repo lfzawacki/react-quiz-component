@@ -296,7 +296,7 @@ class Core extends Component {
 
       return(
         <div key={index}>
-           <button disabled={true} className={"answerBtn btn " + answerBtnCorrectClassName + answerBtnIncorrectClassName}>
+           <button disabled={true} className={"myclass answerBtn btn " + answerBtnCorrectClassName + answerBtnIncorrectClassName}>
             { questionType == 'text' && <span>{ answer }</span> }
             { questionType == 'photo' && <img src={ answer } /> }
           </button>
@@ -359,14 +359,14 @@ class Core extends Component {
     return answers.map( (answer, index) => {
       if(buttons[index] != undefined) {
         return (
-          <button key={index} disabled={ buttons[index].disabled || false } className={`${buttons[index].className} answerBtn btn`}  onClick={() => this.checkAnswer(index+1, correctAnswer, answerSelectionType)}>
+          <button key={index} disabled={ buttons[index].disabled || false } className={`${buttons[index].className} ${questionType == 'photo' ? 'answerPhoto' : '' } answerBtn btn`}  onClick={() => this.checkAnswer(index+1, correctAnswer, answerSelectionType)}>
             { questionType == 'text' && <span>{answer}</span> }
             { questionType == 'photo' && <img src={answer} /> }
           </button>
         )
       } else {
         return (
-          <button key={index} onClick={() => this.checkAnswer(index+1, correctAnswer, answerSelectionType)} className="answerBtn btn">
+          <button key={index} onClick={() => this.checkAnswer(index+1, correctAnswer, answerSelectionType)} className={`${questionType == 'photo' ? 'answerPhoto' : '' } answerBtn btn`}>
           { questionType == 'text' && answer }
           { questionType == 'photo' && <img src={answer}/> }
           </button>

@@ -5,7 +5,8 @@ module.exports = {
   entry: path.join(__dirname, "src/docs"),
   output: {
     path: path.join(__dirname, "docs"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    publicPath: "/quiz/",
   },
   module: {
     rules: [
@@ -30,7 +31,7 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "docs"),
-    port: 8000,
+    port: 8989,
     stats: "minimal"
   }
 };

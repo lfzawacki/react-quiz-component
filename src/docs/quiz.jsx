@@ -1,6 +1,6 @@
 export const quiz =  {
-  "quizTitle": "React Quiz Component Demo",
-  "quizSynopsis": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+  "quizTitle": "BBB Quiz Component Demo",
+  "quizSynopsis": "This quiz is a proof of concept for Bigbluebutton generic component integration. Answer truthfully and by the end of this we'll know which Harry Potter character you are... It's Dobby",
   "questions": [
     {
       "question": "How can you access the state of a component from inside of a member function?",
@@ -62,14 +62,14 @@ export const quiz =  {
       "point": "30"
     },
     {
-      "question": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+      "question": "Pick the Letter 'A' for gods sake",
       "questionType": "photo",
       "answerSelectionType": "single",
       "answers": [
-        "https://dummyimage.com/600x400/000/fff&text=A",
-        "https://dummyimage.com/600x400/000/fff&text=B",
-        "https://dummyimage.com/600x400/000/fff&text=C",
-        "https://dummyimage.com/600x400/000/fff&text=D"
+        "https://dummyimage.com/300x200/000/fff&text=A",
+        "https://dummyimage.com/300x200/000/fff&text=B",
+        "https://dummyimage.com/300x200/000/fff&text=C",
+        "https://dummyimage.com/300x200/000/fff&text=D"
       ],
       "correctAnswer": "1",
       "messageForCorrectAnswer": "Correct answer. Good job.",

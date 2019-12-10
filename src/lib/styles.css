@@ -1,6 +1,11 @@
+.listener-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 105%;
+}
+
 .react-quiz-container {
-  margin: 20px;
-  width: 500px;
+  width: 80vw;
 }
 
 .react-quiz-container .startQuizWrapper {
@@ -26,14 +31,16 @@
 }
 
 .react-quiz-container .questionWrapper .btn {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px 0 10px 0;
   border-radius: 4px;
   border: 1px solid #e8e8e8;;
   font-size: 15px;
   display: block;
   white-space: normal;
   text-align: unset;
+}
+
+.react-quiz-container .questionWrapper .btn img {
 }
 
 .react-quiz-container .questionWrapper .btn.correct {
@@ -64,6 +71,13 @@
 
 .react-quiz-container .answerBtn {
   width: 100%;
+}
+
+.react-quiz-container .answerBtn.answerPhoto {
+  width: 200px;
+  display: inline;
+  margin-right: 20px;
+  padding: 5px;
 }
 
 .react-quiz-container .startQuizWrapper .startQuizBtn {

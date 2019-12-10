@@ -47,6 +47,7 @@
     "url": "https://github.com/wingkwong/react-quiz-component.git"
   },
   "dependencies": {
+    "http-server": "^0.12.0",
     "marked": "^0.7.0"
   }
 }
